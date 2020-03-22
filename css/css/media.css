@@ -1,0 +1,432 @@
+@media (max-width: 1200px) {
+  body {
+    padding-right: 0;
+    grid-template-areas: "sidebar header header" "sidebar project action" "sidebar equipment equipment" "sidebar delivery delivery" "sidebar description description" "sidebar example example";
+  }
+  body .sidebar {
+    margin-right: 25px;
+    width: 190px;
+    padding: 360px 0px 0px 31px;
+  }
+  body .sidebar .sidebar__top {
+    left: 31px;
+  }
+  body .action {
+    width: 233px;
+    background-color: white;
+    padding: 0;
+    margin-right: 0px;
+  }
+  body .action .action__order .description .scores {
+    width: 171px;
+  }
+  body .action .action__order .description .img {
+    margin-right: 6px;
+  }
+  body .action .action__order .order__button {
+    height: 55px;
+    width: 201px;
+  }
+  body .action .action__order .afterword {
+    width: 231px;
+  }
+  body .project {
+    margin-right: 30px;
+    width: 676px;
+  }
+  body .project .project__intro {
+    display: block;
+  }
+  body .project .project__intro .project__intro-photos {
+    width: 676px;
+    margin: 0;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel {
+    width: 672px;
+    height: 436px;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .flickity-page-dots {
+    display: none;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .previous {
+    top: 520px;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .next {
+    top: 520px;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .carousel-cell img {
+    width: 672px;
+    height: 436px;
+  }
+  body .project .project__intro .project__intro-photos .photo__mini {
+    width: 672px;
+  }
+  body .project .project__intro .project__plan {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .equipment .desc .div {
+    width: 303px;
+  }
+  body .equipment ul li {
+    width: 403px;
+  }
+  body .equipment .price {
+    font-size: 23px;
+    width: 455px;
+    height: 100px;
+  }
+  body .example .container .cont {
+    padding: 0px 100px 0px 30px;
+  }
+  body .example .container .cont .proof {
+    display: block;
+  }
+  body .example .container .cont .proof .second__proof {
+    display: none;
+  }
+  body .example .container .examples__grid {
+    display: none;
+  }
+  body footer {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  body .sidebar__button:checked ~ .sidebar {
+    width: 190px;
+  }
+  body .sidebar__button:checked ~ .sidebar .container {
+    display: block;
+  }
+  body .sidebar__button:checked ~ .sidebar .sidebar__button-burger {
+    visibility: hidden;
+  }
+  body .sidebar__button:checked ~ .sidebar .sidebar__logo-mini {
+    visibility: hidden;
+  }
+  body .sidebar {
+    width: 83px;
+  }
+  body .sidebar .sidebar__logo-mini {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  body .sidebar .sidebar__logo-mini a img {
+    width: 70px;
+  }
+  body .sidebar .sidebar__button-burger, body .sidebar .sidebar__logo-mini {
+    visibility: visible;
+    font-family: "Scada", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+  }
+  body .sidebar .sidebar__button-burger img, body .sidebar .sidebar__logo-mini img {
+    width: 35px;
+    padding-left: 4px;
+  }
+  body .sidebar .container {
+    display: none;
+  }
+  body .sidebar .container .sidebar__button-mark {
+    visibility: visible;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  body .project {
+    margin-right: 15px;
+    width: 646px;
+  }
+  body .project .project__intro {
+    display: block;
+  }
+  body .project .project__intro .project__intro-photos {
+    width: 646px;
+    margin: 0;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel {
+    width: 642px;
+    height: 436px;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .flickity-page-dots {
+    display: none;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .previous {
+    display: none;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .next {
+    display: none;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .carousel-cell img {
+    width: 642px;
+    height: 424px;
+  }
+  body .project .project__intro .project__intro-photos .photo__mini {
+    width: 642px;
+  }
+  body .project .project__intro .project__plan {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .action {
+    width: 223px;
+    background-color: white;
+    padding: 0;
+    margin-right: 0px;
+  }
+  body .action .action__order .description .scores {
+    width: 150px;
+  }
+  body .action .action__order .description .img {
+    margin-right: 6px;
+  }
+  body .action .action__order .order__button {
+    height: 55px;
+    width: 200px;
+  }
+  body .action .action__order .afterword {
+    width: 220px;
+  }
+  body .equipment .desc .div {
+    width: 253px;
+    height: 70px;
+  }
+  body .equipment ul li {
+    width: 367px;
+  }
+  body .equipment .price {
+    font-size: 23px;
+    width: 425px;
+    height: 100px;
+  }
+  body .example {
+    display: hidden;
+  }
+  body .example .container .cont {
+    padding: 0px 30px 0px 20px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    padding: 0;
+    grid-template-areas: "sidebar" "header" "project" "action" "equipment" "delivery" "description" "example";
+  }
+  body .sidebar__button:checked ~ .sidebar .sidebar__logo-mini {
+    visibility: visible;
+  }
+  body .sidebar__button:checked ~ .sidebar {
+    height: 401px;
+    width: 320px;
+  }
+  body .sidebar {
+    margin: 0;
+    width: 320px;
+    height: 80px;
+    padding: 0px;
+  }
+  body .sidebar .sidebar__info {
+    display: none;
+  }
+  body .sidebar .sidebar__logo-mini {
+    top: 8px;
+    left: 5px;
+  }
+  body .sidebar .sidebar__logo-mini a img {
+    width: 60px;
+  }
+  body .sidebar .sidebar__button-burger {
+    position: absolute;
+    right: 27px;
+    top: 27px;
+  }
+  body .sidebar .sidebar__button-burger img {
+    width: 27px;
+  }
+  body .sidebar .sidebar__button-burger div {
+    display: none;
+  }
+  body .sidebar .container nav {
+    position: absolute;
+    top: 80px;
+    left: 35%;
+  }
+  body .sidebar .container nav ul li {
+    text-align: center;
+  }
+  body .sidebar .container .sidebar__top {
+    display: none;
+  }
+  body .sidebar .container .sidebar__button-mark {
+    top: 31px;
+    right: 33px;
+  }
+  body .sidebar .container .sidebar__button-mark img {
+    width: 12px;
+  }
+  body .header .header__link {
+    display: none;
+  }
+  body .header .project__name {
+    padding: 0px 60px 0px 20px;
+  }
+  body .project {
+    width: 320px;
+    margin-right: 0;
+  }
+  body .project .project__intro .project__intro-photos {
+    width: 320px;
+  }
+  body .project .project__intro .project__intro-photos .chart {
+    display: none;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel {
+    margin-bottom: 15px;
+    width: 320px;
+    height: 215px;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .carousel-cell img {
+    width: 320px;
+    height: 215px;
+  }
+  body .project .project__intro .project__intro-photos .photo__mini {
+    width: 320px;
+  }
+  body .project .project__intro .project__intro-photos .photo__mini img {
+    width: 60px;
+    height: 41px;
+  }
+  body .project .project__intro .project__intro-photos .photo__mini .first {
+    width: 60px;
+    height: 41px;
+  }
+  body .project .project__intro .project__plan {
+    height: 150px;
+  }
+  body .project .project__intro .project__plan img {
+    width: 115px;
+    height: 130px;
+  }
+  body .action {
+    margin-bottom: 25px;
+    width: 310px;
+    padding-left: 10px;
+    margin: 0;
+  }
+  body .action .action__share {
+    margin-bottom: 50px;
+  }
+  body .action .action__order .description .scores {
+    width: 240px;
+  }
+  body .action .action__order .order__button {
+    margin-bottom: 30px;
+  }
+  body .action .action__order .afterword {
+    margin-bottom: 30px;
+  }
+  body .equipment {
+    grid-template-areas: "default" "optimally";
+  }
+  body .equipment .desc {
+    display: block;
+    padding: 27px 10px;
+  }
+  body .equipment .desc .div {
+    width: 270px;
+    font-size: 18px;
+    height: 30px;
+  }
+  body .equipment .desc .img {
+    display: none;
+  }
+  body .equipment ul li {
+    width: 310px;
+    padding: 5px 0px 5px 10px;
+    font-size: 14px;
+  }
+  body .equipment .price {
+    font-size: 23px;
+    width: 320px;
+    height: 100px;
+  }
+  body .equipment .equipment__default {
+    margin-right: 0px;
+  }
+  body .delivery {
+    padding-top: 20px;
+  }
+  body .delivery .container {
+    padding-left: 15px;
+    display: grid;
+    grid-template-areas: "grid_1" "grid_2" "last" "grid_3";
+  }
+  body .delivery .container .grid_1 {
+    grid-area: grid_1;
+  }
+  body .delivery .container .grid_2 {
+    grid-area: grid_2;
+  }
+  body .delivery .container .grid_3 {
+    grid-area: grid_3;
+  }
+  body .delivery .container div:last-child {
+    grid-area: last;
+  }
+  body .delivery .container .p {
+    font-size: 13px;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  body .delivery .container .pictures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  body .delivery .container .pictures img {
+    width: 70px;
+  }
+  body .delivery .container .pictures img:last-child {
+    display: none;
+  }
+  body .description .container .main-carousel {
+    width: 320px;
+    height: 209px;
+  }
+  body .description .container .main-carousel div img {
+    width: 320px;
+    height: 209px;
+  }
+  body .description .carousel {
+    margin-bottom: 20px;
+  }
+  body .description .cont {
+    padding: 10px;
+  }
+  body .example {
+    padding-left: 10px;
+  }
+  body .example .container .cont {
+    padding: 0;
+  }
+  body .example .container .cont .album {
+    margin-bottom: 42px;
+    float: none;
+    width: 300px;
+    height: 201px;
+    background-image: url(../../img/example/album/background_mini.jpg);
+  }
+  body .example .container .cont .album .container img {
+    width: 30px;
+  }
+  body .example .container .cont .album p {
+    width: 200px;
+    font-size: 14px;
+  }
+}

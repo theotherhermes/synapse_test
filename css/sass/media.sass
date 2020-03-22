@@ -1,0 +1,329 @@
+@media (max-width: 1200px)
+    body
+        padding-right: 0
+        grid-template-areas: "sidebar header header" "sidebar project action" "sidebar equipment equipment" "sidebar delivery delivery" "sidebar description description" "sidebar example example"
+        .sidebar
+            margin-right: 25px
+            width: 190px
+            padding: 360px 0px 0px 31px
+            .sidebar__top
+                left: 31px
+        .action
+            width: 233px
+            background-color: white
+            padding: 0
+            margin-right: 0px
+            .action__order
+                .description
+                    .scores
+                        width: 171px
+                    .img
+                        margin-right: 6px
+                .order__button
+                    height: 55px
+                    width: 201px
+                .afterword
+                    width: 231px
+        .project
+            margin-right: 30px
+            width: 676px
+            .project__intro
+                display: block
+                .project__intro-photos
+                    width: 676px
+                    margin: 0
+                    .main-carousel
+                        width: 672px
+                        height: 436px
+                        .flickity-page-dots
+                            display: none
+                        .previous
+                            top: 520px
+                        .next
+                            top: 520px
+                        .carousel-cell img
+                            width: 672px
+                            height: 436px
+                    .photo__mini
+                        width: 672px
+                .project__plan
+                    margin-top: 20px
+                    display: flex
+                    justify-content: space-around
+        .equipment
+            .desc .div
+                width: 303px
+            ul li
+                width: 403px
+            .price
+                font-size: 23px
+                width: 455px
+                height: 100px
+        .example .container
+            .cont
+                padding: 0px 100px 0px 30px
+                .proof
+                    display: block
+                    .second__proof
+                        display: none
+            .examples__grid
+                display: none
+        footer
+            display: none
+@media (max-width: 1024px)
+    body
+        .sidebar__button:checked ~ .sidebar
+            width: 190px
+        .sidebar__button:checked ~ .sidebar .container
+            display: block
+        .sidebar__button:checked ~ .sidebar .sidebar__button-burger
+            visibility: hidden
+        .sidebar__button:checked ~ .sidebar .sidebar__logo-mini
+            visibility: hidden
+        .sidebar
+            width: 83px
+            .sidebar__logo-mini
+                position: absolute    
+                top: 20px
+                left: 20px
+                a img
+                    width: 70px
+            .sidebar__button-burger, .sidebar__logo-mini
+                visibility: visible
+                font-family: 'Scada', sans-serif
+                font-weight: 700
+                font-size: 15px
+                color: white
+                text-transform: uppercase
+                img
+                    width: 35px
+                    padding-left: 4px
+            .container
+                display: none
+                .sidebar__button-mark
+                    visibility: visible
+                    position: absolute
+                    top: 20px
+                    right: 20px
+        .project
+            margin-right: 15px
+            width: 646px
+            .project__intro
+                display: block
+                .project__intro-photos
+                    width: 646px
+                    margin: 0
+                    .main-carousel
+                        width: 642px
+                        height: 436px
+                        .flickity-page-dots
+                            display: none
+                        .previous
+                            display: none
+                        .next
+                            display: none
+                        .carousel-cell img
+                            width: 642px
+                            height: 424px
+                    .photo__mini
+                        width: 642px
+                .project__plan
+                    margin-top: 20px
+                    display: flex
+                    justify-content: space-around
+        .action
+            width: 223px
+            background-color: white
+            padding: 0
+            margin-right: 0px
+            .action__order
+                .description
+                    .scores
+                        width: 150px
+                    .img
+                        margin-right: 6px
+                .order__button
+                    height: 55px
+                    width: 200px
+                .afterword
+                    width: 220px
+        .equipment
+            .desc .div
+                width: 253px
+                height: 70px
+            ul li
+                    width: 367px
+            .price
+                font-size: 23px
+                width: 425px
+                height: 100px
+        .example
+            display: hidden
+            .container .cont
+                    padding: 0px 30px 0px 20px
+@media (max-width: 320px)
+    body
+        .sidebar__button:checked ~ .sidebar .sidebar__logo-mini
+            visibility: visible
+        .sidebar__button:checked ~ .sidebar
+            height: 401px
+            width: 320px
+        padding: 0
+        grid-template-areas: "sidebar" "header" "project" "action" "equipment" "delivery" "description" "example"
+        .sidebar
+            margin: 0
+            width: 320px
+            height: 80px
+            padding: 0px
+            .sidebar__info
+                display: none
+            .sidebar__logo-mini
+                top: 8px
+                left: 5px
+                a img
+                    width: 60px
+            .sidebar__button-burger
+                position: absolute
+                right: 27px
+                top: 27px
+                img
+                    width: 27px
+                div
+                    display: none
+            .container
+                nav
+                    position: absolute
+                    top: 80px
+                    left: 35%
+                    ul li
+                        text-align: center
+                .sidebar__top
+                    display: none
+                .sidebar__button-mark
+                    top: 31px
+                    right: 33px
+                    img
+                        width: 12px
+        .header
+            .header__link
+                display: none
+            .project__name
+                padding: 0px 60px 0px 20px
+        .project
+            width: 320px
+            margin-right: 0
+            .project__intro
+                .project__intro-photos
+                    width: 320px                    
+                    .chart
+                        display: none
+                    .main-carousel
+                        margin-bottom: 15px
+                        width: 320px
+                        height: 215px
+                        .carousel-cell img
+                            width: 320px
+                            height: 215px
+                    .photo__mini
+                        width: 320px
+                        img
+                            width: 60px
+                            height: 41px
+                        .first
+                            width: 60px
+                            height: 41px
+                .project__plan 
+                    height: 150px
+                    img
+                        width: 115px
+                        height: 130px
+        .action
+            margin-bottom: 25px
+            width: 310px
+            padding-left: 10px
+            margin: 0
+            .action__share
+                margin-bottom: 50px
+            .action__order
+                .description .scores
+                    width: 240px
+                .order__button
+                    margin-bottom: 30px
+                .afterword
+                    margin-bottom: 30px             
+        .equipment
+            grid-template-areas: "default" "optimally"
+            .desc
+                display: block
+                padding: 27px 10px
+                .div
+                    width: 270px
+                    font-size: 18px
+                    height: 30px
+                .img
+                    display: none
+            ul li
+                width: 310px
+                padding: 5px 0px 5px 10px
+                font-size: 14px           
+            .price
+                font-size: 23px
+                width: 320px
+                height: 100px
+            .equipment__default
+                margin-right: 0px
+        .delivery
+            padding-top: 20px
+            .container
+                padding-left: 15px
+                display: grid
+                grid-template-areas: "grid_1" "grid_2" "last" "grid_3"
+                .grid_1
+                    grid-area: grid_1
+                .grid_2
+                    grid-area: grid_2
+                .grid_3
+                    grid-area: grid_3
+                div:last-child
+                    grid-area: last
+                .p
+                    font-size: 13px
+                    justify-content: start
+                    margin-bottom: 20px
+                .pictures
+                    display: flex
+                    justify-content: space-around
+                    margin-top: 10px
+                    margin-bottom: 20px
+                    img
+                        width: 70px
+                    img:last-child
+                        display: none
+        .description
+            .container
+                .main-carousel
+                    width: 320px
+                    height: 209px
+                    div img
+                        width: 320px
+                        height: 209px
+            .carousel
+                margin-bottom: 20px     
+            .cont
+                padding: 10px               
+        .example
+            padding-left: 10px
+            .container
+                .cont
+                    padding: 0
+                    .album
+                        margin-bottom: 42px
+                        float: none
+                        width: 300px
+                        height: 201px
+                        background-image: url(../../img/example/album/background_mini.jpg)  
+                        .container img
+                            width: 30px   
+                        p
+                            width: 200px
+                            font-size: 14px                   

@@ -1,0 +1,561 @@
+body {
+  padding-right: 119px;
+  font-weight: 300;
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  grid-template-areas: "sidebar action header" "sidebar action project" "sidebar action equipment" "sidebar action delivery" "sidebar action description" "sidebar action example" "sidebar action footer";
+}
+body a, body button {
+  cursor: pointer;
+}
+body .sidebar__button {
+  visibility: hidden;
+}
+body .sidebar {
+  grid-area: sidebar;
+  position: relative;
+  width: 200px;
+  padding: 360px 0px 0px 60px;
+  background-image: url(../../img/sidebar/background.jpg);
+}
+body .sidebar .sidebar__logo-mini, body .sidebar .sidebar__button-burger, body .sidebar .sidebar__button-mark {
+  visibility: hidden;
+}
+body .sidebar .sidebar__top {
+  position: absolute;
+  top: 25px;
+  left: 48px;
+}
+body .sidebar .sidebar__top .sidebar__logo {
+  margin-bottom: 30px;
+}
+body .sidebar .sidebar__top .sidebar__tagline {
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+body .sidebar nav {
+  margin-bottom: 140px;
+}
+body .sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+body .sidebar nav ul li {
+  margin-bottom: 24px;
+}
+body .sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+body .sidebar .sidebar__info .number {
+  margin-bottom: 8px;
+}
+body .sidebar .sidebar__info .number a {
+  text-decoration: none;
+  color: white;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+body .sidebar .sidebar__info .worktime {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+  margin-bottom: 50px;
+}
+body .sidebar .sidebar__info .sidebar__info-button {
+  color: white;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 19px;
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+body .header {
+  grid-area: header;
+  margin-top: 25px;
+  margin-bottom: 43px;
+}
+body .header .header__link {
+  display: flex;
+  margin-bottom: 45px;
+}
+body .header .header__link .img {
+  position: relative;
+}
+body .header .header__link .img img {
+  position: absolute;
+  top: 7px;
+  left: -24px;
+}
+body .header .header__link a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: 30px;
+}
+body .header .project__name {
+  color: #503314;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+body .project {
+  margin-bottom: 39px;
+  grid-area: project;
+}
+body .project .project__intro {
+  display: grid;
+  grid-template-areas: "photos plan";
+}
+body .project .project__intro .project__intro-photos {
+  grid-area: "photos";
+  position: relative;
+  width: 820px;
+}
+body .project .project__intro .project__intro-photos .chart {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 1;
+  padding: 19px;
+  background-color: white;
+  border-color: transparent;
+}
+body .project .project__intro .project__intro-photos .main-carousel {
+  width: 774px;
+  height: 500px;
+  margin-bottom: 25px;
+}
+body .project .project__intro .project__intro-photos .main-carousel .previous {
+  top: 580px;
+  left: -10px;
+  background-color: none;
+  width: 25px;
+  height: 25px;
+}
+body .project .project__intro .project__intro-photos .main-carousel .next {
+  top: 580px;
+  right: -10px;
+  background-color: none;
+  width: 25px;
+  height: 25px;
+}
+body .project .project__intro .project__intro-photos .main-carousel .flickity-page-dots {
+  bottom: -152px;
+}
+body .project .project__intro .project__intro-photos .main-carousel .flickity-page-dots .dot {
+  height: 2px;
+  width: 160px;
+  margin: 30;
+  border-radius: 0;
+}
+body .project .project__intro .project__intro-photos .main-carousel .carousel-cell {
+  margin-right: 10px;
+}
+body .project .project__intro .project__intro-photos .main-carousel .carousel-cell img {
+  width: 774px;
+  height: 500px;
+}
+body .project .project__intro .project__intro-photos .photo__mini {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 750px;
+}
+body .project .project__intro .project__intro-photos .photo__mini img {
+  width: 102px;
+  height: 90px;
+}
+body .project .project__intro .project__intro-photos .photo__mini .first {
+  width: 167px;
+  height: 113px;
+}
+body .project .project__intro .project__plan {
+  grid-area: "plan";
+}
+body .project .project__intro .project__plan div {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+body .action {
+  grid-area: action;
+  width: 371px;
+  background-color: #f7f7f7;
+  padding: 19px 0px 0px 45px;
+  font-weight: 300;
+  font-size: 18px;
+  margin-right: 29px;
+}
+body .action .action__share {
+  margin-bottom: 75px;
+}
+body .action .action__share img {
+  margin-right: 5px;
+}
+body .action .action__order .description {
+  display: grid;
+  grid-template-areas: "img scores";
+  margin-bottom: 10px;
+}
+body .action .action__order .description .img {
+  grid-area: "img";
+  width: 60px;
+}
+body .action .action__order .description .scores {
+  gird-area: "scores";
+  width: 280px;
+}
+body .action .action__order .description .scores div {
+  margin-bottom: 25px;
+}
+body .action .action__order .description .scores span {
+  font-weight: 700;
+}
+body .action .action__order .price {
+  margin-bottom: 35px;
+}
+body .action .action__order .price .desc {
+  margin-bottom: 16px;
+}
+body .action .action__order .price .price {
+  color: #006022;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+body .action .action__order .order__button {
+  width: 255px;
+  height: 66px;
+  background-color: #006022;
+  background-image: url(../../img/action/button.jpg);
+  padding: 0;
+  border: none;
+  background-color: #006022;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 45px;
+}
+body .action .action__order .afterword {
+  width: 310px;
+  font-size: 16px;
+  line-height: 24px;
+}
+body .equipment {
+  grid-area: equipment;
+  margin-bottom: 47px;
+  display: grid;
+  grid-template-areas: "default optimally";
+}
+body .equipment .desc {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-areas: "img div";
+  padding: 25px 37px;
+}
+body .equipment .desc .img {
+  grid-area: "img";
+}
+body .equipment .desc .div {
+  grid-area: "div";
+  align-self: center;
+  width: 340px;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+body .equipment ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .equipment ul li {
+  width: 473px;
+  padding: 16px 29px;
+  font-size: 16px;
+}
+body .equipment ul li:nth-child(even) {
+  background-color: #f7f7f7;
+}
+body .equipment .price {
+  width: 530px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+body .equipment .default__price {
+  background-image: url(../../img/equipment/default_background.jpg);
+}
+body .equipment .optimally__price {
+  background-image: url(../../img/equipment/optimally_background.jpg);
+}
+body .equipment .equipment__default {
+  grid-area: "default";
+  margin-right: 30px;
+}
+body .equipment .equipment__optimally {
+  grid-area: "optimally";
+}
+body .delivery {
+  padding-top: 42px;
+  margin-bottom: 50px;
+  grid-area: delivery;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+}
+body .delivery .name {
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 26px;
+}
+body .delivery .p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-bottom: 56px;
+}
+body .delivery .p p {
+  margin: 0;
+}
+body .delivery .p p span {
+  font-weight: 700;
+}
+body .delivery .pictures {
+  margin-bottom: 45px;
+}
+body .delivery .pictures img {
+  margin: 0px 10px;
+}
+body .description {
+  grid-area: description;
+}
+body .description .container {
+  display: flex;
+  justify-content: center;
+}
+body .description .container p {
+  margin: 0;
+}
+body .description .container .main-carousel {
+  width: 825px;
+  height: 530px;
+}
+body .description .container .main-carousel .previous, body .description .container .main-carousel .next {
+  display: none;
+}
+body .description .container .main-carousel .flickity-page-dots {
+  display: none;
+}
+body .description .container .name {
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+body .description .carousel {
+  margin-bottom: 62px;
+  padding-top: 42px;
+}
+body .example {
+  grid-area: example;
+}
+body .example .p {
+  display: flex;
+  justify-content: center;
+  font-family: "Scada", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+body .example .cont {
+  margin-bottom: 45px;
+}
+body .example .cont .proof {
+  display: grid;
+  grid-template-areas: "first second";
+}
+body .example .cont .proof .first__proof {
+  grid-area: "first";
+  margin-right: 31px;
+  width: 240px;
+}
+body .example .cont .proof .first__proof .container {
+  position: relative;
+}
+body .example .cont .proof .first__proof .container img {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+body .example .cont .proof .first__proof .container .pdf {
+  top: 0px;
+  left: 100px;
+  position: absolute;
+  padding: 6px;
+  background-color: green;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 10px;
+}
+body .example .cont .proof .second__proof {
+  grid-area: "second";
+  width: 240px;
+}
+body .example .cont .proof .second__proof .img {
+  height: 170px;
+}
+body .example .cont .proof .second__proof .container {
+  position: relative;
+}
+body .example .cont .proof .second__proof .container img {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+body .example .cont .proof .second__proof .container .pdf {
+  top: 0px;
+  left: 100px;
+  position: absolute;
+  padding: 6px;
+  background-color: green;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 10px;
+}
+body .example .cont .album {
+  float: right;
+  justify-self: end;
+  position: relative;
+  width: 541px;
+  height: 364px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../img/example/album/background.jpg);
+}
+body .example .cont .album p {
+  position: absolute;
+  bottom: 0px;
+  left: 21px;
+  text-decoration: none;
+  color: white;
+}
+body .example .examples__grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 186px;
+}
+body .example .examples__grid img {
+  margin: 2px;
+}
+body footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-areas: "top" "bottom";
+}
+body footer .footer__top {
+  grid-area: "top";
+  display: grid;
+  grid-template-areas: "first second third fourth";
+  margin-bottom: 20px;
+}
+body footer .footer__top a {
+  color: green;
+  text-decoration: none;
+}
+body footer .footer__top .location, body footer .footer__top .phone {
+  position: absolute;
+  top: 5px;
+  left: -35px;
+}
+body footer .footer__top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 18px;
+}
+body footer .footer__top ul li {
+  margin-bottom: 18px;
+}
+body footer .footer__top span {
+  font-weight: 700;
+}
+body footer .footer__top .top__first {
+  grid-area: "first";
+}
+body footer .footer__top .top__second {
+  grid-area: "second";
+  width: 320px;
+}
+body footer .footer__top .top__third {
+  grid-area: "third";
+  position: relative;
+  margin-right: 100px;
+}
+body footer .footer__top .top__third .product {
+  margin-bottom: 25px;
+}
+body footer .footer__top .top__third .product div {
+  margin-bottom: 5px;
+}
+body footer .footer__top .top__third .office div {
+  margin-bottom: 5px;
+}
+body footer .footer__top .top__fourth {
+  grid-area: "fourth";
+  position: relative;
+}
+body footer .footer__top .top__fourth .contacts {
+  margin-bottom: 40px;
+}
+body footer .footer__top .top__fourth .contacts div {
+  margin-bottom: 10px;
+}
+body footer .footer__top .top__fourth .icons a {
+  margin-right: 30px;
+}
+body footer .footer__bottom {
+  grid-area: "bottom";
+  display: flex;
+  justify-content: space-between;
+}
+body footer .footer__bottom .sans {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+}
+body footer .footer__bottom .author {
+  display: flex;
+  justify-content: space-between;
+}
+body footer .footer__bottom .author .img {
+  margin-right: 10px;
+}
+body footer .footer__bottom .author .create {
+  padding-top: 8px;
+}
