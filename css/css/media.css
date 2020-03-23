@@ -1,6 +1,5 @@
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
   body {
-    padding-right: 0;
     grid-template-areas: "sidebar header header" "sidebar project action" "sidebar equipment equipment" "sidebar delivery delivery" "sidebar description description" "sidebar example example";
   }
   body .sidebar {
@@ -70,11 +69,11 @@
     width: 303px;
   }
   body .equipment ul li {
-    width: 403px;
+    width: 90%;
   }
   body .equipment .price {
     font-size: 23px;
-    width: 455px;
+    width: 100%;
     height: 100px;
   }
   body .example .container .cont {
@@ -93,7 +92,10 @@
     display: none;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
+  body {
+    padding-right: 0px;
+  }
   body .sidebar__button:checked ~ .sidebar {
     width: 190px;
   }
@@ -194,15 +196,13 @@
     width: 220px;
   }
   body .equipment .desc .div {
-    width: 253px;
     height: 70px;
   }
   body .equipment ul li {
-    width: 367px;
+    width: 87%;
   }
   body .equipment .price {
     font-size: 23px;
-    width: 425px;
     height: 100px;
   }
   body .example {
@@ -212,7 +212,7 @@
     padding: 0px 30px 0px 20px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 1023px) {
   body {
     padding: 0;
     grid-template-areas: "sidebar" "header" "project" "action" "equipment" "delivery" "description" "example";
@@ -222,11 +222,11 @@
   }
   body .sidebar__button:checked ~ .sidebar {
     height: 401px;
-    width: 320px;
+    width: 100%;
   }
   body .sidebar {
     margin: 0;
-    width: 320px;
+    width: 100%;
     height: 80px;
     padding: 0px;
   }
@@ -276,45 +276,49 @@
     padding: 0px 60px 0px 20px;
   }
   body .project {
-    width: 320px;
+    width: 100%;
     margin-right: 0;
   }
   body .project .project__intro .project__intro-photos {
-    width: 320px;
+    width: 100%;
   }
   body .project .project__intro .project__intro-photos .chart {
     display: none;
   }
   body .project .project__intro .project__intro-photos .main-carousel {
     margin-bottom: 15px;
-    width: 320px;
-    height: 215px;
+    width: 100%;
+    height: 100%;
+  }
+  body .project .project__intro .project__intro-photos .main-carousel .carousel-cell {
+    width: 100%;
   }
   body .project .project__intro .project__intro-photos .main-carousel .carousel-cell img {
-    width: 320px;
-    height: 215px;
+    width: 100%;
+    height: 100%;
   }
   body .project .project__intro .project__intro-photos .photo__mini {
-    width: 320px;
+    width: 100%;
   }
   body .project .project__intro .project__intro-photos .photo__mini img {
-    width: 60px;
-    height: 41px;
+    display: none;
+    width: 80%;
+    height: 100%;
   }
   body .project .project__intro .project__intro-photos .photo__mini .first {
-    width: 60px;
-    height: 41px;
+    width: 30%;
+    height: 100%;
   }
   body .project .project__intro .project__plan {
-    height: 150px;
+    height: 100%;
   }
   body .project .project__intro .project__plan img {
-    width: 115px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
   }
   body .action {
     margin-bottom: 25px;
-    width: 310px;
+    width: 95%;
     padding-left: 10px;
     margin: 0;
   }
@@ -322,12 +326,13 @@
     margin-bottom: 50px;
   }
   body .action .action__order .description .scores {
-    width: 240px;
+    width: 90%;
   }
   body .action .action__order .order__button {
     margin-bottom: 30px;
   }
   body .action .action__order .afterword {
+    width: 100%;
     margin-bottom: 30px;
   }
   body .equipment {
@@ -338,21 +343,24 @@
     padding: 27px 10px;
   }
   body .equipment .desc .div {
-    width: 270px;
+    width: 100%;
     font-size: 18px;
     height: 30px;
   }
   body .equipment .desc .img {
     display: none;
   }
+  body .equipment ul {
+    width: 97%;
+  }
   body .equipment ul li {
-    width: 310px;
+    width: 100%;
     padding: 5px 0px 5px 10px;
     font-size: 14px;
   }
   body .equipment .price {
     font-size: 23px;
-    width: 320px;
+    width: 100%;
     height: 100px;
   }
   body .equipment .equipment__default {
@@ -396,12 +404,15 @@
     display: none;
   }
   body .description .container .main-carousel {
-    width: 320px;
-    height: 209px;
+    width: 100%;
+    height: 100%;
+  }
+  body .description .container .main-carousel div {
+    width: 100%;
   }
   body .description .container .main-carousel div img {
-    width: 320px;
-    height: 209px;
+    width: 100%;
+    height: 100%;
   }
   body .description .carousel {
     margin-bottom: 20px;

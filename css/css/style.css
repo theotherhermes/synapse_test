@@ -311,9 +311,11 @@ body .equipment .price {
 }
 body .equipment .default__price {
   background-image: url(../../img/equipment/default_background.jpg);
+  background-size: 100%;
 }
 body .equipment .optimally__price {
   background-image: url(../../img/equipment/optimally_background.jpg);
+  background-size: 100%;
 }
 body .equipment .equipment__default {
   grid-area: "default";

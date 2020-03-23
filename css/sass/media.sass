@@ -1,6 +1,6 @@
-@media (max-width: 1200px)
+@media (max-width: 1800px)
     body
-        padding-right: 0
+        // padding-right: 0
         grid-template-areas: "sidebar header header" "sidebar project action" "sidebar equipment equipment" "sidebar delivery delivery" "sidebar description description" "sidebar example example"
         .sidebar
             margin-right: 25px
@@ -54,10 +54,10 @@
             .desc .div
                 width: 303px
             ul li
-                width: 403px
+                width: 90%
             .price
                 font-size: 23px
-                width: 455px
+                width: 100%
                 height: 100px
         .example .container
             .cont
@@ -70,8 +70,9 @@
                 display: none
         footer
             display: none
-@media (max-width: 1024px)
+@media (max-width: 1199px)
     body
+        padding-right: 0px
         .sidebar__button:checked ~ .sidebar
             width: 190px
         .sidebar__button:checked ~ .sidebar .container
@@ -149,30 +150,30 @@
                     width: 220px
         .equipment
             .desc .div
-                width: 253px
+                // width: 253px
                 height: 70px
             ul li
-                    width: 367px
+                    width: 87%
             .price
                 font-size: 23px
-                width: 425px
+                // width: 425px
                 height: 100px
         .example
             display: hidden
             .container .cont
                     padding: 0px 30px 0px 20px
-@media (max-width: 320px)
+@media (max-width: 1023px)
     body
         .sidebar__button:checked ~ .sidebar .sidebar__logo-mini
             visibility: visible
         .sidebar__button:checked ~ .sidebar
             height: 401px
-            width: 320px
+            width: 100%
         padding: 0
         grid-template-areas: "sidebar" "header" "project" "action" "equipment" "delivery" "description" "example"
         .sidebar
             margin: 0
-            width: 320px
+            width: 100%
             height: 80px
             padding: 0px
             .sidebar__info
@@ -210,46 +211,50 @@
             .project__name
                 padding: 0px 60px 0px 20px
         .project
-            width: 320px
+            width: 100%
             margin-right: 0
             .project__intro
                 .project__intro-photos
-                    width: 320px                    
+                    width: 100%                    
                     .chart
                         display: none
                     .main-carousel
                         margin-bottom: 15px
-                        width: 320px
-                        height: 215px
-                        .carousel-cell img
-                            width: 320px
-                            height: 215px
+                        width: 100%
+                        height: 100%
+                        .carousel-cell 
+                            width: 100%
+                            img
+                                width: 100%
+                                height: 100%
                     .photo__mini
-                        width: 320px
+                        width: 100%
                         img
-                            width: 60px
-                            height: 41px
+                            display: none
+                            width: 80%
+                            height: 100%
                         .first
-                            width: 60px
-                            height: 41px
+                            width: 30%
+                            height: 100%
                 .project__plan 
-                    height: 150px
+                    height: 100%
                     img
-                        width: 115px
-                        height: 130px
+                        width: 100%
+                        height: 100%
         .action
             margin-bottom: 25px
-            width: 310px
+            width: 95%
             padding-left: 10px
             margin: 0
             .action__share
                 margin-bottom: 50px
             .action__order
                 .description .scores
-                    width: 240px
+                    width: 90%
                 .order__button
                     margin-bottom: 30px
                 .afterword
+                    width: 100%
                     margin-bottom: 30px             
         .equipment
             grid-template-areas: "default" "optimally"
@@ -257,18 +262,20 @@
                 display: block
                 padding: 27px 10px
                 .div
-                    width: 270px
+                    width: 100%
                     font-size: 18px
                     height: 30px
                 .img
                     display: none
-            ul li
-                width: 310px
-                padding: 5px 0px 5px 10px
-                font-size: 14px           
+            ul 
+                width: 97%
+                li
+                    width: 100%
+                    padding: 5px 0px 5px 10px
+                    font-size: 14px           
             .price
                 font-size: 23px
-                width: 320px
+                width: 100%
                 height: 100px
             .equipment__default
                 margin-right: 0px
@@ -302,11 +309,13 @@
         .description
             .container
                 .main-carousel
-                    width: 320px
-                    height: 209px
-                    div img
-                        width: 320px
-                        height: 209px
+                    width: 100%
+                    height: 100%
+                    div
+                        width: 100%
+                        img
+                            width: 100%
+                            height: 100%
             .carousel
                 margin-bottom: 20px     
             .cont
